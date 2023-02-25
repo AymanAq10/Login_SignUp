@@ -1,0 +1,204 @@
+:root{
+        --backgroun:#e9ebed;
+        --backgroun2:#e9ebed;
+        --text-color:#886999;
+        --text-color2:#ffc478;
+        --darkcolor:#343a40;
+        --divs-color:#6c757d;
+        --darkblue:darkblue;
+        --primary:#1898acf2;
+        --black:#000000c2;
+        --white:#fff;
+        --gray-dark: #343a40;
+        --warning:#ffc107;
+        --border:0;
+        --text-shadow:none;
+        --box-shadow:none;
+        --box-shadow2:none;
+        --text-shadow2:none;
+        --font-weight:bold;
+}
+.parent {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background:var(--backgroun);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    color:#ffc478;
+}
+.box {
+    min-width: 309px;
+    height: 310px;
+    position: relative;
+    background: linear-gradient(to bottom, var(--text-color2) 5%, var(--primary) 5%);
+    padding: 5px;
+    box-shadow: 4px 4px 12px #00000063;
+    border-radius: 7px;
+    transition:  all 0.4s;
+}
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.box2{
+display: none;
+}
+.Active{
+    min-width: 315px;
+    height: 460px;
+}
+input {
+    padding: 6px 15px;
+    border-radius: 20px;
+    border: 0;
+    font-size: 14px;
+}
+
+.div_btns {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 23px;
+    font-size: 16px;
+}
+
+.submit{
+    width: 130px;
+    border-radius: 15px;
+    border: none;
+    background: var(--text-color2);
+    color: var(--black);
+    font-size: 16px;
+    padding: 1px;
+    margin: 0px auto;
+    transition: .3s;
+}
+.submit:hover{
+    text-shadow:var(--text-shadow);
+}
+/* button:nth-child(1) {
+    width: 130px;
+    border-radius: 15px;
+    border: none;
+    background: var(--text-color2);
+    color: #000000c2;
+    font-size: 16px;
+} */
+
+button:nth-child(1) {
+    background: transparent;
+    border: navajowhite;
+    color: var(--darkblue);
+    margin-right: 1%;
+    font-size: 14px;
+    font-weight: var(--font-weight);
+    transition: all .3s;
+}
+button:nth-child(1):hover{
+    color:#ffc478;
+    text-shadow: var(--text-shadow2);
+    transition: .4s;
+
+}
+
+button:nth-child(1)::before {
+    content: '';
+    position: absolute;
+    width: 17px;
+    height: 2px;
+    background: var(--backgroun2);
+    right: 5.68rem;
+    bottom: 11px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 11px;
+    box-shadow: var(--box-shadow);
+  }
+  
+  
+  i::before {
+    content: '';
+    width: 10px;
+    height: 2px;
+    position: absolute;
+    background: var(--backgroun2);
+    right: 98px;
+    bottom: 11px;
+    transform-origin: left;
+    transform: rotate(32deg);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: var(--box-shadow);
+  }
+  
+  
+  i::after {
+    content: '';
+    width: 10px;
+    height: 2px;
+    position: absolute;
+    background: var(--backgroun2);
+    right: 98px;
+    bottom: 11px;
+    transform-origin: left;
+    transform: rotate(-32deg);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: var(--box-shadow);
+  }
+  
+  input:focus{
+    outline: none !important;
+    box-shadow: var(--box-shadow2);
+  }
+
+  @media (max-width: 400px), (max-height: 915) {
+    .box{
+        min-width: 260px;
+    }
+    button:nth-child(1) {
+        margin-right: 14%;
+      }
+  }
+/* @media(prefers-colors-sheme:dark){
+    :root{
+        --backgroun:#e9ebed;
+        --text-color:#B473D7;
+        --text-color2:#ffc478;
+        --darkcolor:#343a40;
+        --divs-color:#6c757d;
+        --darkblue:darkblue;
+        --primary:#1898acf2;
+        
+    }
+} */
+.ipt{
+    background: var(--white);
+    color:var(--gray-dark) ;
+    border: var(--border);
+}
+.Darkmode{
+    --text-color2:#9b5903;
+    --primary:#07505bf2;
+    --backgroun:var(--darkcolor);
+    --black :#fff;
+    --darkblue:#ffc478;
+    --white:#07505bf2;
+    --gray-dark:gold;
+    --border:1px solid gold !important;
+    --text-shadow: 0 0 5px gold, 0 0 8px gold,0 0 8px gold;
+    --box-shadow: 0 0 5px gold, 0 0 10px gold;
+    --text-shadow2: 0 0 5px gold, 0 0 10px gold;
+    --font-weight:normal;
+    --backgroun2:#ffc478;
+    --box-shadow2:0px 0px 4px 0px gold;
+} ;
